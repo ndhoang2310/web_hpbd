@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy Birthday Bé Iuuu 💖</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Itim&family=Mali:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@400;600;700&family=Pacifico&family=Patrick+Hand&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Palette Hồng & Hồng Pastel Dịu Ngọt Liền Mạch */
+            --pink-primary: #ff6584;
+            --pink-deep: #ff477e;
+            --pink-soft: #ff85a1;
+            --pink-light: #ffc2d1;
+            --pink-bubble: #ffe5ec;
+            --white: #ffffff;
+            --gold-accent: #f8c276;
+            --text-dark: #4a2835;
+            --text-soft: #85586f;
+            --text-muted: #b08d9f;
+            
+            --font-script: 'Great Vibes', cursive;
+            --font-script-alt: 'Dancing Script', cursive;
+            --font-handwrite: 'Mali', 'Itim', cursive, sans-serif;
+            --font-pacifico: 'Pacifico', cursive;
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Quicksand', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Nền chung liền mạch xuyên suốt toàn bộ website */
+        body {
+            font-family: var(--font-body);
+            background: linear-gradient(180deg, 
+                #fff4f7 0%, 
+                #ffe7f0 25%, 
+                #ffdbe7 50%, 
+                #ffe5ef 75%, 
+                #fff2f6 100%
+            ) fixed;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-font-smoothing: antialiased;
+            overscroll-behavior-y: none;
+        }
+
+        /* --- LỚP PHỦ TỐI ĐEN TOÀN MÀN HÌNH KHI NHẤN GIỮ ƯỚC --- */
+        .dark-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(10, 4, 8, 0.96);
+            z-index: 80;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.35s ease;
+        }
+
+        .dark-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Cute Floating Particles */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .cute-particle {
+            position: absolute;
+            font-size: 1.3rem;
+            opacity: 0;
+            animation: float-up linear infinite;
+            filter: drop-shadow(0 2px 5px rgba(255, 101, 132, 0.2));
+            will-change: transform, opacity;
+        }
+
+        @keyframes float-up {
+            0% { transform: translateY(105vh) scale(0.6) rotate(0deg); opacity: 0; }
+            20% { opacity: 0.85; }
+            80% { opacity: 0.85; }
+            100% { transform: translateY(-10vh) scale(1.2) rotate(360deg); opacity: 0; }
+        }
+
+        /* --- CÁC SECTION NỐI LIỀN MẠCH KHÔNG BỊ NGẮT ĐOẠN --- */
+        section {
+            background: transparent !important;
+            position: relative;
+        }
+
+        /* --- HERO SECTION --- */
+        #hero {
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2.5rem 1.2rem;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            animation: fade-in 1.2s ease-out;
+            max-width: 900px;
+        }
+
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .badge-cute {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--pink-primary);
+            padding: 7px 18px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(255, 101, 132, 0.15);
+            margin-bottom: 1.2rem;
+            border: 1.5px dashed var(--pink-soft);
+            animation: gentle-bounce 3s infinite ease-in-out;
+        }
+
+        @keyframes gentle-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .title {
+            font-family: var(--font-script);
+            font-size: 4.8rem;
+            color: var(--pink-deep);
+            text-shadow: 2px 4px 15px rgba(255, 71, 126, 0.22);
+            margin-bottom: 0.6rem;
+            line-height: 1.15;
+        }
+
+        .subtitle {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            letter-spacing: 2.5px;
+            color: var(--text-soft);
+            margin-bottom: 2.2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Countdown Boxes Pastel */
+        .counter-container {
+            display: flex;
+            gap: 1.2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+
+        .counter-box {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(8px);
+            border: 2px solid #ffd0de;
+            border-radius: 20px;
+            padding: 1.1rem 1rem;
+            min-width: 95px;
+            box-shadow: 0 8px 25px rgba(255, 105, 140, 0.12);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            position: relative;
+        }
+
+        .counter-box:hover {
+            transform: translateY(-5px);
+            border-color: var(--pink-primary);
+        }
+
+        .counter-num {
+            font-family: var(--font-heading);
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: var(--pink-deep);
+            line-height: 1.1;
+            margin-bottom: 0.2rem;
+        }
+
+        .counter-label {
+            font-size: 0.85rem;
+            color: var(--text-soft);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .scroll-down {
+            margin-top: 1rem;
+            animation: bounce-cute 2s infinite ease-in-out;
+            cursor: pointer;
+            color: var(--pink-primary);
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 700;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 22px;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(255, 101, 132, 0.15);
+            border: 1px solid #ffd0de;
+            display: inline-block;
+        }
+
+        @keyframes bounce-cute {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        /* --- ĐIỂM NỐI LIỀN MẠCH --- */
+        .flow-connector {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
+            color: var(--pink-soft);
+            font-size: 1.5rem;
+            opacity: 0.85;
+            pointer-events: none;
+        }
+
+        .flow-line {
+            width: 2px;
+            height: 45px;
+            background: linear-gradient(to bottom, transparent, var(--pink-soft), transparent);
+            margin: 6px 0;
+        }
+
+        /* --- TIMELINE SECTION (KHUNG ẢNH POLAROID WASHI TAPE DỄ THƯƠNG) --- */
+        #timeline {
+            padding: 2rem 1.5rem 4rem 1.5rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-family: var(--font-script-alt);
+            font-size: 3.8rem;
+            color: var(--pink-deep);
+            text-shadow: 0 4px 15px rgba(255, 71, 126, 0.15);
+            margin-bottom: 0.4rem;
+        }
+
+        .section-subtitle {
+            color: var(--text-soft);
+            font-size: 1.05rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .timeline-container {
+            max-width: 950px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Dải ruy băng Timeline màu hồng kẹo ngọt */
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 100%;
+            background: repeating-linear-gradient(to bottom, #ff9ebb, #ff9ebb 10px, transparent 10px, transparent 20px);
+            border-radius: 4px;
+        }
+
+        /* Tối ưu hiệu ứng lướt mượt 60fps */
+        .timeline-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4rem;
+            position: relative;
+            width: 100%;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform, opacity;
+        }
+
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        /* Trái tim timeline dot */
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 32px;
+            height: 32px;
+            background: #ffffff;
+            border-radius: 50%;
+            border: 2.5px solid var(--pink-primary);
+            box-shadow: 0 0 10px rgba(255, 101, 132, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+            font-size: 0.95rem;
+        }
+
+        /* Khung ảnh Polaroid cách điệu */
+        .polaroid-card {
+            background: #ffffff;
+            padding: 13px 13px 20px 13px;
+            border-radius: 12px;
+            box-shadow: 0 12px 30px rgba(255, 105, 140, 0.12), 0 4px 10px rgba(0, 0, 0, 0.03);
+            position: relative;
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+            border: 1px solid #ffe1eb;
+        }
+
+        /* Khung 4:3 Chữ nhật */
+        .polaroid-card.ratio-4x3 {
+            width: 46%;
+        }
+
+        .polaroid-card.ratio-4x3 .timeline-photo {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            height: auto;
+        }
+
+        /* Khung 1:1 Vuông vắn */
+        .polaroid-card.ratio-1x1 {
+            width: 38%;
+        }
+
+        .polaroid-card.ratio-1x1 .timeline-photo {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            height: auto;
+        }
+
+        /* Băng keo Washi Tape cách điệu ở trên đầu khung ảnh */
+        .washi-tape {
+            position: absolute;
+            top: -11px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-1deg);
+            width: 85px;
+            height: 23px;
+            background: rgba(255, 179, 198, 0.75);
+            border-left: 2px dashed rgba(255, 255, 255, 0.7);
+            border-right: 2px dashed rgba(255, 255, 255, 0.7);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+            z-index: 4;
+            backdrop-filter: blur(2px);
+        }
+
+        /* Sticker góc ảnh */
+        .card-sticker {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 1.2rem;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.08));
+            pointer-events: none;
+        }
+
+        /* Độ nghiêng không đồng nhất tự nhiên cho 12 tấm ảnh */
+        .timeline-item:nth-child(1) .polaroid-card { transform: rotate(-2.8deg); }
+        .timeline-item:nth-child(2) .polaroid-card { transform: rotate(3deg); }
+        .timeline-item:nth-child(3) .polaroid-card { transform: rotate(-1.8deg); }
+        .timeline-item:nth-child(4) .polaroid-card { transform: rotate(2.4deg); }
+        .timeline-item:nth-child(5) .polaroid-card { transform: rotate(-3.2deg); }
+        .timeline-item:nth-child(6) .polaroid-card { transform: rotate(2deg); }
+        .timeline-item:nth-child(7) .polaroid-card { transform: rotate(-2.4deg); }
+        .timeline-item:nth-child(8) .polaroid-card { transform: rotate(2.8deg); }
+        .timeline-item:nth-child(9) .polaroid-card { transform: rotate(-1.9deg); }
+        .timeline-item:nth-child(10) .polaroid-card { transform: rotate(2.5deg); }
+        .timeline-item:nth-child(11) .polaroid-card { transform: rotate(-2.6deg); }
+        .timeline-item:nth-child(12) .polaroid-card { transform: rotate(2.2deg); }
+
+        .polaroid-card:hover {
+            transform: rotate(0deg) scale(1.03) translateY(-6px) !important;
+            box-shadow: 0 20px 40px rgba(255, 71, 126, 0.2);
+            z-index: 5;
+        }
+
+        .timeline-photo {
+            width: 100%;
+            background: linear-gradient(135deg, #ffd3e0, #ffb6c1);
+            border-radius: 8px;
+            margin-bottom: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.04);
+        }
+        
+        .timeline-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .polaroid-card:hover .timeline-photo img {
+            transform: scale(1.05);
+        }
+
+        .timeline-date {
+            font-family: var(--font-heading);
+            color: var(--pink-deep);
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 0.3rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .timeline-caption {
+            font-family: var(--font-handwrite);
+            font-size: 1.05rem;
+            font-weight: 500;
+            line-height: 1.55;
+            color: #4a2835;
+        }
+
+        /* --- CAKE SECTION (ẢNH BÁNH KEM THẬT CỦA BẠN) --- */
+        #cake-section {
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 3rem 1.5rem;
+            overflow: hidden;
+        }
+
+        .cake-instruction {
+            text-align: center;
+            font-family: var(--font-script-alt);
+            font-size: 2.4rem;
+            color: var(--pink-deep);
+            margin-bottom: 2rem;
+            text-shadow: 0 2px 10px rgba(255, 71, 126, 0.2);
+            transition: color 0.35s ease, transform 0.35s ease, text-shadow 0.35s ease;
+            min-height: 60px;
+            padding: 0 1rem;
+            line-height: 1.3;
+            position: relative;
+            z-index: 90;
+        }
+
+        /* Khi nhấn giữ: chữ hướng dẫn chuyển sang sáng vàng rực trên nền đen */
+        .wish-active-text {
+            color: #ffd166 !important;
+            text-shadow: 0 0 20px rgba(255, 209, 102, 0.8) !important;
+        }
+
+        .cake-container {
+            position: relative;
+            margin-top: 1rem;
+            z-index: 90; /* Nằm trên lớp phủ tối đen */
+            touch-action: none;
+            -webkit-user-select: none;
+            user-select: none;
+            cursor: pointer;
+            padding: 1.5rem;
+            transition: transform 0.25s ease;
+        }
+
+        .cake-container:active {
+            transform: scale(0.97);
+        }
+
+        /* Wrapper của chiếc bánh kem thật */
+        .real-cake-wrapper {
+            position: relative;
+            width: 290px;
+            height: 345px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .real-cake-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 15px 30px rgba(255, 105, 140, 0.25));
+            transition: filter 0.4s ease, opacity 0.4s ease;
+            pointer-events: none;
+        }
+
+        /* 3 ngọn lửa động bập bùng trên đỉnh 3 cây nến */
+        .flame-wrapper {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .flame-left { left: 33.4%; top: 8.5%; }
+        .flame-center { left: 49.1%; top: 3.5%; }
+        .flame-right { left: 63.4%; top: 8.5%; }
+
+        .flame {
+            width: 14px;
+            height: 25px;
+            background: radial-gradient(ellipse at 50% 60%, #fff7b2 20%, #ff9e00 65%, #ff5400 100%);
+            border-radius: 50% 50% 20% 20%;
+            box-shadow: 0 0 16px #ffaa00, 0 0 30px #ff5500;
+            animation: flicker 0.4s infinite alternate;
+            transform-origin: bottom center;
+            transition: all 0.4s ease;
+        }
+
+        .flame.out {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        @keyframes flicker {
+            0% { transform: scale(1) rotate(-3deg); opacity: 0.95; }
+            100% { transform: scale(1.12) rotate(3deg); opacity: 1; }
+        }
+
+        /* Làn khói trắng mỏng bay lên khi nến tắt */
+        .smoke-puff {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 50%;
+            opacity: 0;
+            pointer-events: none;
+            filter: blur(2.5px);
+            z-index: 12;
+        }
+
+        .smoke-left { left: 33.4%; top: 9%; }
+        .smoke-center { left: 49.1%; top: 4%; }
+        .smoke-right { left: 63.4%; top: 9%; }
+
+        .smoke-puff.active {
+            animation: smoke-rise 2s ease-out forwards;
+        }
+
+        @keyframes smoke-rise {
+            0% { transform: translateY(0) scale(1); opacity: 0.8; }
+            50% { opacity: 0.5; transform: translateY(-25px) scale(2.5) translateX(-6px); }
+            100% { transform: translateY(-55px) scale(4) translateX(10px); opacity: 0; }
+        }
+
+        .glow-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255, 209, 102, 0.35) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+            z-index: 85;
+        }
+
+        .wish-active .glow-overlay {
+            opacity: 1;
+        }
+
+        #confetti-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 95;
+        }
+        
+        .celebration-text {
+            position: absolute;
+            top: 22%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.4);
+            font-family: var(--font-pacifico);
+            font-size: 4.2rem;
+            color: #ffffff;
+            text-shadow: 0 0 25px #ff477e, 0 0 45px #ff7597;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 96;
+            transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-align: center;
+            width: 90%;
+            line-height: 1.2;
+        }
+
+        .celebration-text.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        /* --- LOVE LETTER SECTION --- */
+        #letter-section {
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 1.5rem 6rem 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .letter-hint {
+            color: var(--pink-deep);
+            font-family: var(--font-body);
+            font-weight: 700;
+            margin-bottom: 2rem;
+            font-size: 1.25rem;
+            animation: pulse-cute 2s infinite ease-in-out;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 10px 24px;
+            border-radius: 50px;
+            box-shadow: 0 6px 20px rgba(255, 101, 132, 0.15);
+            border: 2px dashed var(--pink-light);
+        }
+
+        @keyframes pulse-cute {
+            0%, 100% { transform: scale(1); opacity: 0.9; }
+            50% { transform: scale(1.04); opacity: 1; }
+        }
+
+        /* Phong bì dễ thương */
+        .envelope-wrapper {
+            position: relative;
+            width: 320px;
+            height: 210px;
+            cursor: pointer;
+            margin-top: 15px;
+            perspective: 1200px;
+            z-index: 10;
+        }
+
+        .envelope {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #ffccd5;
+            border-radius: 12px;
+            box-shadow: 0 18px 40px rgba(255, 71, 126, 0.2);
+            transition: transform 0.4s ease;
+        }
+
+        .envelope-wrapper:hover .envelope {
+            transform: translateY(-8px);
+        }
+
+        /* Lá thư ẩn gọn gàng 100% bên trong phong bì, KHÔNG BỊ LÒI RA */
+        .letter-preview {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 280px;
+            height: 180px;
+            background: #ffffff;
+            border-radius: 8px 8px 0 0;
+            z-index: 2;
+            transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.2);
+            box-shadow: 0 0 10px rgba(0,0,0,0.06);
+            background-image: repeating-linear-gradient(#ffffff, #ffffff 22px, #ffeef2 23px);
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--pink-primary);
+            font-family: var(--font-handwrite);
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        /* Nắp túi phong bì phía trước */
+        .envelope-pocket {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        .front-pocket {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-right: 160px solid #ffb3c1;
+            border-left: 160px solid #ffb3c1;
+            border-top: 105px solid transparent;
+            border-bottom: 105px solid #ffa3b4;
+            border-radius: 0 0 12px 12px;
+        }
+
+        /* Nắp phong bì mở lật */
+        .envelope-flap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-right: 160px solid transparent;
+            border-left: 160px solid transparent;
+            border-top: 115px solid #ffccd5;
+            z-index: 5;
+            transform-origin: top center;
+            transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.08));
+        }
+
+        /* Tem trái tim niêm phong sáp */
+        .wax-seal {
+            position: absolute;
+            top: 90px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, #ff477e, #ff6584);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 1.5rem;
+            z-index: 6;
+            box-shadow: 0 4px 12px rgba(255, 71, 126, 0.35);
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        /* Khi phong bì mở */
+        .envelope-wrapper.open .envelope-flap {
+            transform: rotateX(180deg);
+            z-index: 1;
+        }
+
+        .envelope-wrapper.open .wax-seal {
+            opacity: 0;
+            transform: translateX(-50%) scale(0);
+        }
+
+        .envelope-wrapper.open .letter-preview {
+            transform: translate(-50%, -100px);
+        }
+
+        /* --- POPUP LÁ THƯ VIẾT TAY HOÀN CHỈNH --- */
+        .letter-modal-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(40, 15, 25, 0.65);
+            backdrop-filter: blur(8px);
+            z-index: 120;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.45s ease;
+        }
+
+        .letter-modal-backdrop.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .letter-paper {
+            width: 100%;
+            max-width: 540px;
+            max-height: 88vh;
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 1.6rem 1.6rem 1.2rem 1.6rem;
+            position: relative;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35), 0 0 30px rgba(255, 105, 140, 0.25);
+            border: 2px solid #ffd5e2;
+            overflow-y: auto;
+            transform: scale(0.7) translateY(40px);
+            transition: all 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .letter-modal-backdrop.active .letter-paper {
+            transform: scale(1) translateY(0);
+        }
+
+        .letter-header-deco {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-bottom: 1.5px dashed var(--pink-light);
+            padding-bottom: 0.6rem;
+        }
+
+        .letter-title {
+            font-family: var(--font-script-alt);
+            font-size: 2.2rem;
+            color: var(--pink-deep);
+        }
+
+        .close-letter-btn {
+            background: var(--pink-bubble);
+            border: none;
+            color: var(--pink-deep);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(255, 71, 126, 0.2);
+            transition: all 0.2s;
+        }
+
+        .close-letter-btn:hover {
+            transform: scale(1.1);
+            background: var(--pink-primary);
+            color: #fff;
+        }
+
+        .letter-img-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border: 1px solid #ffe3eb;
+            background: #fffdfc;
+        }
+
+        .letter-img {
+            width: 100%;
+            height: auto;
+            max-height: 68vh;
+            object-fit: contain;
+            display: block;
+            border-radius: 11px;
+        }
+
+        .post-script {
+            margin-top: 0.8rem;
+            font-family: var(--font-handwrite);
+            font-size: 1.15rem;
+            color: var(--pink-primary);
+            border-top: 1px dotted var(--pink-light);
+            padding-top: 0.6rem;
+            text-align: center;
+        }
+
+        /* --- RESPONSIVE MOBILE TỐI ƯU --- */
+        @media (max-width: 768px) {
+            #hero {
+                padding: 1.5rem 1rem;
+            }
+
+            .title {
+                font-size: 3.2rem;
+            }
+
+            .subtitle {
+                font-size: 0.95rem;
+                margin-bottom: 1.8rem;
+            }
+
+            .counter-container {
+                gap: 0.7rem;
+            }
+
+            .counter-box {
+                min-width: 72px;
+                padding: 0.85rem 0.6rem;
+                border-radius: 16px;
+            }
+
+            .counter-num {
+                font-size: 1.8rem;
+            }
+
+            .counter-label {
+                font-size: 0.72rem;
+            }
+
+            /* Timeline Mobile */
+            #timeline {
+                padding: 2rem 1rem;
+            }
+
+            .section-title {
+                font-size: 2.8rem;
+            }
+
+            .timeline-container::before {
+                left: 18px;
+            }
+
+            .timeline-item {
+                flex-direction: column !important;
+                align-items: flex-end;
+                margin-bottom: 2.8rem;
+                transform: translateY(25px);
+            }
+
+            .polaroid-card {
+                width: calc(100% - 44px) !important;
+                padding: 12px 12px 18px 12px;
+            }
+
+            .timeline-dot {
+                left: 18px;
+                width: 26px;
+                height: 26px;
+                font-size: 0.8rem;
+            }
+
+            .timeline-photo {
+                height: auto;
+            }
+
+            .timeline-caption {
+                font-size: 1.02rem;
+                line-height: 1.5;
+            }
+
+            /* Cake Mobile */
+            .cake-instruction {
+                font-size: 1.7rem;
+                min-height: 50px;
+                margin-bottom: 1.5rem;
+            }
+
+            .real-cake-wrapper {
+                width: 240px;
+                height: 285px;
+            }
+
+            .celebration-text {
+                font-size: 2.8rem;
+            }
+
+            /* Envelope Mobile */
+            .envelope-wrapper {
+                width: 280px;
+                height: 185px;
+            }
+
+            .front-pocket {
+                border-right-width: 140px;
+                border-left-width: 140px;
+                border-top-width: 92px;
+                border-bottom-width: 92px;
+            }
+
+            .envelope-flap {
+                border-right-width: 140px;
+                border-left-width: 140px;
+                border-top-width: 100px;
+            }
+
+            .letter-preview {
+                width: 245px;
+                height: 155px;
+            }
+
+            .wax-seal {
+                top: 78px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .letter-paper {
+                padding: 1.2rem 1rem 0.8rem 1rem;
+                max-height: 92vh;
+                border-radius: 14px;
+            }
+
+            .letter-title {
+                font-size: 1.8rem;
+            }
+
+            .letter-img {
+                max-height: 72vh;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .title {
+                font-size: 2.6rem;
+            }
+
+            .counter-box {
+                min-width: 65px;
+                padding: 0.7rem 0.5rem;
+            }
+
+            .counter-num {
+                font-size: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2.3rem;
+            }
+
+            .cake-instruction {
+                font-size: 1.45rem;
+            }
+
+            .real-cake-wrapper {
+                width: 210px;
+                height: 250px;
+            }
+
+            .envelope-wrapper {
+                width: 250px;
+                height: 165px;
+            }
+
+            .front-pocket {
+                border-right-width: 125px;
+                border-left-width: 125px;
+                border-top-width: 82px;
+                border-bottom-width: 82px;
+            }
+
+            .envelope-flap {
+                border-right-width: 125px;
+                border-left-width: 125px;
+                border-top-width: 90px;
+            }
+
+            .letter-preview {
+                width: 220px;
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LỚP PHỦ TOÀN MÀN HÌNH TỐI ĐEN KHI NHẤN GIỮ ƯỚC -->
+    <div class="dark-overlay" id="dark-overlay"></div>
+
+    <!-- CANVAS CONFETTI PHÁO HOA GIẤY -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="badge-cute">🎀 Happy Birthday My Love ✨</div>
+            <h1 class="title">Happy Birthday<br><!-- THAY ĐỔI TÊN -->Bé Iuuu 💖</h1>
+            <p class="subtitle">Chúng mình đã bên nhau được</p>
+            
+            <div class="counter-container">
+                <div class="counter-box">
+                    <div class="counter-num" id="days">0</div>
+                    <div class="counter-label">Ngày</div>
+                </div>
+                <div class="counter-box">
+                    <div class="counter-num" id="hours">0</div>
+                    <div class="counter-label">Giờ</div>
+                </div>
+                <div class="counter-box">
+                    <div class="counter-num" id="minutes">0</div>
+                    <div class="counter-label">Phút</div>
+                </div>
+                <div class="counter-box">
+                    <div class="counter-num" id="seconds">0</div>
+                    <div class="counter-label">Giây</div>
+                </div>
+            </div>
+
+            <div class="scroll-down" onclick="document.getElementById('timeline').scrollIntoView({behavior:'smooth'})">
+                <span>Lướt xuống xem kỷ niệm nè 👇💖</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ĐƯỜNG NỐI LIỀN MẠCH -->
+    <div class="flow-connector">
+        <span>✨</span>
+        <div class="flow-line"></div>
+        <span>🌸</span>
+    </div>
+
+    <!-- TIMELINE SECTION (KHUNG ẢNH POLAROID WASHI TAPE DỄ THƯƠNG) -->
+    <section id="timeline">
+        <div class="section-header">
+            <h2 class="section-title">Hành Trình Của Chúng Mình 🌸</h2>
+            <p class="section-subtitle">Từng khoảnh khắc bên em đều là điều ngọt ngào nhất ✨</p>
+        </div>
+
+        <div class="timeline-container">
+
+            <!-- ENTRY 1 (RATIO-4X3) -->
+            <div class="timeline-item">
+                <div class="timeline-dot">🌷</div>
+                <div class="polaroid-card ratio-4x3">
+                    <div class="washi-tape"></div>
+                    <div class="timeline-photo">
+                        <img src="images/memory_10.jpg" alt="The first Date">
+                    </div>
+                    <div class="timeline-date">✨ The first Date • <span style="font-weight:400;font-size:0.85rem;color:var(--text-soft)">26/5/2023</span></div>
+                    <p class="timeline-caption">Hong hỉu sao mà tui để bạn chở ta. Ngày mà chúng ta bắt đầu heheeee.</p>
+                    <div class="card-sticker">🌸</div>
+                </div>
+            </div>
+
+            <!-- ENTRY 2 (RATIO-4X3) -->
+            <div class="timeline-item">
+                <div class="timeline-dot">💖</div>
+                <div class="polaroid-card ratio-4x3">
+                    <div class="washi-tape"></div>
+                    <div class="timeline-photo">
+                        <img src="images/memory_4.jpg" alt="Thời học xinhhh">
+                    </div>
+                    <div class="timeline-date">✨ Thời học xinhhh • <span style="font-weight:400;font-size:0.85rem;color:var(--text-soft)">8/3/2024</span></div>
+                    <p class="timeline-caption">Những lúc tan tầm chụp ảnh đại đại nè. Nhớ ghiaaa</p>
+                    <div class="card-sticker">🎀</div>
+                </div>
+            </div>
+
+            <!-- ENTRY 3 (RATIO-4X3) -->
+            <div class="timeline-item">
+                <div class="timeline-dot">✈️</div>
+                <div class="polaroid-card ratio-4x3">
+                    <div class="washi-tape"></div>
+                    <div class="timeline-photo">
+                        <img src="images/memory_9.jpg" alt="Đi ăng Gà rán">
+                    </div>
+                    <div class="timeline-date">✨ Đi ăng Gà rán • <span style="font-weight:400;font-size:0.85rem;color:var(--text-soft)">13/4/2024</span></div>
+                    <p class="timeline-caption">Tạo cái dáng gì zayyyy</p>
+                    <div class="card-sticker">🧸</div>
+                </div>
+            </div>
+
+            <!-- ENTRY 4 (RATIO-4X3) -->
+            <div class="timeline-item">
+                <div class="timeline-dot">🎂</div>
+                <div class="polaroid-card ratio-4x3">
+                    <div class="washi-tape"></div>
+                    <div class="timeline-photo">
+                        <img src="images/memory_1.jpg" alt="Lần đầu vào Đà Nẽng">
+                    </div>
+                    <div class="timeline-date">✨ Lần đầu vào Đà Nẽng • <span style="font-weight:400;font-size:0.85rem;color:var(--text-soft)">24/6/2025</span></div>
+                    <p class="timeline-caption">mất suộc biển nhưng bù lại được bộ ảnh cũm cũm ha</p>
+                    <div class="card-sticker">🎈</div>
+                </div>
+            </div>
+
+            <!-- ENTRY 5 (RATIO-1X1) -->
+            <div class="timeline-item">
+                <div class="timeline-dot">🧸</div>
+                <div class="polaroid-card ratio-1x1">
+                    <div class="washi-tape"></div>
+                    <div class="timeline-photo">
+                        <img src="images/memory_7.jpg" alt="Mùa hè của ctaaa">
+                    </div>
+                    <div class="timeline-date">✨ Mùa hè của ctaaa • <span style="font-weight:400;font-size:0.85rem;color:var(--text-soft)">9/7/2025</span></div>
+                    <p class="timeline-caption">Đợi ngày em về để cõng từ Huế vô Đà Nẵng.</p>
+                    <div class="card-sticker">🍓</div>
+                </div>
+            </div>
+
+            <!-- ENTRY 6 (RATIO-4X3) -->
+            <div class="timeline-item">
+                <div class="timeline-dot">🍧</div>
+                <div class="polaroid-card ratio-4x3">
+                    <div class="washi-tape"></div>
+                    <div class="timeline-photo">
+                        <img src="images/memory_11.jpg" alt="Về thăm trường NDC">
+                    </div>
+                    <div class="timeline-date">✨ Về thăm trường NDC • <span style="font-weight:400;font-size:0.85rem;color:var(--text-soft)">1/9/2025</span></div>
+                    <p class="timeline-caption">Nhìn nhau cừi khùm ghia, nma iu em nhó.</p>
+                    <div class="card-sticker">✨</div>
+                </div>
+            </div>
+
+            <!-- ENTRY 7 (RATIO-1X1) -->
+            <div class="timeline-item">
+                <div class="timeline-dot">🌙</div>
+                <div class="polaroid-card ratio-1x1">
+                    <div class="washi-tape"></div>
+                    <div class="timeline-photo">
+                        <img src="images/memory_3.jpg" alt="Sinh nhựt của Bồ tuiii">
+                    </div>
+                    <div class="timeline-date">✨ Sinh nhựt của Bồ tuiii • <span style="font-weight:400;font-size:0.85rem;color:var(--text-soft)">27/9/2025</span></div>
+                    <p class="timeline-caption">Lần đầu tiên được đón sinh nhật riêng với nhau nè. Ps: sinh nhật giông tố :((</p>
+                    <div class="card-sticker">💖</div>
+                </div>
+            </div>
+
+            <!-- ENTRY 8 (RATIO-4X3) -->
+            <div class="timeline-item">
+                <div class="timeline-dot">🧣</div>
+                <div class="polaroid-card ratio-4x3">
+                    <div class="washi-tape"></div>
+                    <div class="timeline-photo">
+                        <img src="images/memory_6.jpg" alt="Giáng xênh cùng iemm">
+                    </div>
+                    <div class="timeline-date">✨ Giáng xênh cùng iemm • <span style="font-weight:400;font-size:0.85rem;color:var(--text-soft)">25/12/2025</span></div>
+                    <p class="timeline-caption">Giáng sinh cùng người dáng xinhhh.</p>
+                    <div class="card-sticker">☕</div>
+                </div>
+            </div>
+
+            <!-- ENTRY 9 (RATIO-4X3) -->
+            <div class="timeline-item">
+                <div class="timeline-dot">😸</div>
+                <div class="polaroid-card ratio-4x3">
+                    <div class="washi-tape"></div>
+                    <div class="timeline-photo">
+                        <img src="images/memory_12.jpg" alt="Lần 2 zô ĐN">
+                    </div>
+                    <div class="timeline-date">✨ Lần 2 zô ĐN • <span style="font-weight:400;font-size:0.85rem;color:var(--text-soft)">31/1/2026</span></div>
+                    <p class="timeline-caption">Tuy ngắn nma nhìu kỉ lịm. Đà Nẵng chờ ngày iem trở vìa.</p>
+                    <div class="card-sticker">🐾</div>
+                </div>
+            </div>
+
+            <!-- ENTRY 10 (RATIO-4X3) -->
+            <div class="timeline-item">
+                <div class="timeline-dot">💍</div>
+                <div class="polaroid-card ratio-4x3">
+                    <div class="washi-tape"></div>
+                    <div class="timeline-photo">
+                        <img src="images/memory_5.jpg" alt="Bộ ảnh Tết đầu tiên">
+                    </div>
+                    <div class="timeline-date">✨ Bộ ảnh Tết đầu tiên • <span style="font-weight:400;font-size:0.85rem;color:var(--text-soft)">13/2/2026</span></div>
+                    <p class="timeline-caption">Là nơi những bứt ảnh siu đẹp ra đời. Chờ ngày em về để chụp ảnh cho em nữa nè.</p>
+                    <div class="card-sticker">🧁</div>
+                </div>
+            </div>
+
+            <!-- ENTRY 11 (RATIO-1X1) -->
+            <div class="timeline-item">
+                <div class="timeline-dot">🌸</div>
+                <div class="polaroid-card ratio-1x1">
+                    <div class="washi-tape"></div>
+                    <div class="timeline-photo">
+                        <img src="images/memory_2.jpg" alt="Lần đầu đi núi Hòn Vượn nè">
+                    </div>
+                    <div class="timeline-date">✨ Lần đầu đi núi Hòn Vượn nè • <span style="font-weight:400;font-size:0.85rem;color:var(--text-soft)">1/5/2026</span></div>
+                    <p class="timeline-caption">Hơi mợt nhưng mà rất zuiiii</p>
+                    <div class="card-sticker">💫</div>
+                </div>
+            </div>
+
+            <!-- ENTRY 12 (RATIO-4X3) -->
+            <div class="timeline-item">
+                <div class="timeline-dot">✨</div>
+                <div class="polaroid-card ratio-4x3">
+                    <div class="washi-tape"></div>
+                    <div class="timeline-photo">
+                        <img src="images/memory_8.jpg" alt="Kỷ niệm 3 năm iêu nhau">
+                    </div>
+                    <div class="timeline-date">✨ Kỷ niệm 3 năm iêu nhau • <span style="font-weight:400;font-size:0.85rem;color:var(--text-soft)">25/5/2026</span></div>
+                    <p class="timeline-caption">Khùm khùm d đó chứ túi đó tâm sự cũng kha khá.</p>
+                    <div class="card-sticker">🍧</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ĐƯỜNG NỐI LIỀN MẠCH -->
+    <div class="flow-connector">
+        <span>🎂</span>
+        <div class="flow-line"></div>
+        <span>✨</span>
+    </div>
+
+    <!-- CAKE SECTION (CHIẾC BÁNH KEM THẬT ĐÃ TÁCH NỀN CỦA BẠN) -->
+    <section id="cake-section">
+        <div class="glow-overlay"></div>
+        <div class="celebration-text" id="celeb-text">🎉 Happy Birthday<br><!-- THAY ĐỔI TÊN -->Bé Iuuu! 💖🎂</div>
+        
+        <h3 class="cake-instruction" id="cake-instruction">✨ Nhấn và giữ bánh để ước một điều ước nha... 🎂</h3>
+        
+        <div class="cake-container" id="cake-container">
+            <div class="real-cake-wrapper">
+                <!-- Chiếc bánh kem thật đã tách nền -->
+                <img class="real-cake-img" id="real-cake-img" src="images/cake_real.png" alt="Bánh sinh nhật">
+                
+                <!-- 3 ngọn lửa động bập bùng trên đỉnh 3 cây nến -->
+                <div class="flame-wrapper flame-left"><div class="flame"></div></div>
+                <div class="flame-wrapper flame-center"><div class="flame"></div></div>
+                <div class="flame-wrapper flame-right"><div class="flame"></div></div>
+                
+                <!-- Làn khói trắng mỏng bay lên khi thổi tắt nến -->
+                <div class="smoke-puff smoke-left"></div>
+                <div class="smoke-puff smoke-center"></div>
+                <div class="smoke-puff smoke-right"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ĐƯỜNG NỐI LIỀN MẠCH -->
+    <div class="flow-connector">
+        <span>💌</span>
+        <div class="flow-line"></div>
+        <span>🎀</span>
+    </div>
+
+    <!-- LOVE LETTER SECTION -->
+    <section id="letter-section">
+        <div class="letter-hint">💌 Em có một bức thư bí mật... Chạm vào để mở nhé! 🎀</div>
+        
+        <div class="envelope-wrapper" id="envelope-wrapper">
+            <div class="envelope">
+                <div class="envelope-flap"></div>
+                <div class="wax-seal">💖</div>
+                
+                <!-- Bức thư nằm ẩn hoàn toàn trong phong bì -->
+                <div class="letter-preview">
+                    <span>💌</span>
+                    <span>Thư Gửi Bé Iuuu</span>
+                </div>
+                
+                <div class="envelope-pocket">
+                    <div class="front-pocket"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPUP LÁ THƯ VIẾT TAY HOÀN CHỈNH -->
+    <div class="letter-modal-backdrop" id="letter-modal">
+        <div class="letter-paper">
+            <div class="letter-header-deco">
+                <h3 class="letter-title">Bức Thư Gửi Bé Iuuu 💌</h3>
+                <button class="close-letter-btn" id="close-letter-btn" title="Gấp thư lại">✕</button>
+            </div>
+            
+            <div class="letter-img-container">
+                <img src="images/letter.jpg" alt="Thư tay gửi Bé Iuuu" class="letter-img">
+            </div>
+
+            <div class="post-script">
+                Chạm vào dấu ✕ hoặc bấm ra ngoài để gấp thư lại nha! 🌸
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- DETECT MOBILE ---
+        const isMobile = window.innerWidth <= 768;
+
+        // --- CUTE FLOATING PARTICLES ---
+        function createParticles() {
+            const container = document.getElementById('particles');
+            const icons = ['💖', '🌸', '✨', '🎀', '🍓', '🌷', '🧁'];
+            const particleCount = isMobile ? 12 : 20;
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.innerHTML = icons[Math.floor(Math.random() * icons.length)];
+                particle.className = 'cute-particle';
+                particle.style.left = Math.random() * 95 + 'vw';
+                particle.style.animationDuration = (Math.random() * 4 + 4) + 's';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.fontSize = (Math.random() * 0.9 + 0.8) + 'rem';
+                container.appendChild(particle);
+            }
+        }
+        createParticles();
+
+        // --- DATE COUNTER ---
+        // <!-- THAY ĐỔI NGÀY YÊU NHAU --> (YYYY-MM-DD)
+        const startDate = new Date("2023-05-26T00:00:00").getTime();
+
+        function updateCounter() {
+            const now = new Date().getTime();
+            const difference = now - startDate;
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+        }
+        setInterval(updateCounter, 1000);
+        updateCounter();
+
+        // --- TIMELINE INTERSECTION OBSERVER (TỐI ƯU SIÊU MƯỢT) ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.05, rootMargin: "0px 0px -40px 0px" });
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            observer.observe(item);
+        });
+
+        // --- CAKE & CANDLE INTERACTION ---
+        const darkOverlay = document.getElementById('dark-overlay');
+        const cakeContainer = document.getElementById('cake-container');
+        const cakeInstruction = document.getElementById('cake-instruction');
+        const flames = document.querySelectorAll('.flame');
+        const celebText = document.getElementById('celeb-text');
+        const realCakeImg = document.getElementById('real-cake-img');
+        const smokePuffs = document.querySelectorAll('.smoke-puff');
+        
+        let holdTimeout;
+        let isHolding = false;
+        let isReadyToBlow = false;
+        let hasBlown = false;
+
+        function startWish(e) {
+            if (hasBlown) return;
+            e.preventDefault();
+            isHolding = true;
+
+            // 1. MÀN HÌNH ĐEN HẾT TOÀN BỘ KHI NHẤN GIỮ
+            darkOverlay.classList.add('active');
+            cakeContainer.classList.add('wish-active');
+            cakeInstruction.classList.add('wish-active-text');
+            
+            // 2. CÂU NHẮC KHI NHẤN GIỮ
+            cakeInstruction.innerHTML = "🤫 Nhắm mắt lại ước đi nè... đừng thả tay vội nha ✨";
+            cakeInstruction.style.transform = "scale(1.05)";
+            
+            if (navigator.vibrate) {
+                navigator.vibrate(60);
+            }
+            
+            holdTimeout = setTimeout(() => {
+                if (isHolding) {
+                    isReadyToBlow = true;
+                    // Khi đủ 2 giây
+                    cakeInstruction.innerHTML = "💨 Thổi nến đi nàooo! Thả tay ra nha! 🎉";
+                    cakeInstruction.style.transform = "scale(1.15)";
+                    
+                    if (navigator.vibrate) {
+                        navigator.vibrate([100, 60, 120]);
+                    }
+                }
+            }, 2000);
+        }
+
+        function endWish(e) {
+            if (hasBlown || !isHolding) return;
+            isHolding = false;
+            clearTimeout(holdTimeout);
+            
+            // 3. THẢ RA THÌ MÀN HÌNH SÁNG LẠI NGAY LẬP TỨC!
+            darkOverlay.classList.remove('active');
+            cakeContainer.classList.remove('wish-active');
+            cakeInstruction.classList.remove('wish-active-text');
+            
+            if (isReadyToBlow) {
+                blowCandles();
+            } else {
+                cakeInstruction.innerHTML = "✨ Nhấn và giữ bánh để ước một điều ước nha... 🎂";
+                cakeInstruction.style.transform = "scale(1)";
+            }
+        }
+
+        function blowCandles() {
+            hasBlown = true;
+            
+            if (navigator.vibrate) {
+                navigator.vibrate([50, 40, 50, 40, 60]);
+            }
+            
+            // Tắt nến lần lượt
+            flames.forEach((flame, index) => {
+                setTimeout(() => {
+                    flame.classList.add('out');
+                }, index * 200);
+            });
+
+            // Chuyển sang ảnh bánh đã tắt nến và bay khói
+            setTimeout(() => {
+                if (realCakeImg) {
+                    realCakeImg.src = 'images/cake_real_unlit.png';
+                }
+                smokePuffs.forEach(smoke => smoke.classList.add('active'));
+            }, 500);
+
+            // Sau khi nến tắt hoàn toàn
+            setTimeout(() => {
+                cakeInstruction.style.opacity = '0';
+                cakeContainer.style.opacity = '0';
+                cakeContainer.style.transition = 'opacity 0.8s ease';
+                
+                setTimeout(() => {
+                    celebText.classList.add('show');
+                    fireConfetti();
+                    
+                    if (navigator.vibrate) {
+                        navigator.vibrate([120, 60, 120, 60, 250]);
+                    }
+                }, 350);
+            }, 1000);
+        }
+
+        cakeContainer.addEventListener('mousedown', startWish);
+        cakeContainer.addEventListener('touchstart', startWish, { passive: false });
+        
+        window.addEventListener('mouseup', endWish);
+        window.addEventListener('touchend', endWish);
+        window.addEventListener('touchcancel', endWish);
+
+        // --- CONFETTI CANVAS ---
+        const canvas = document.getElementById('confetti-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let animationId;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        const confettiColors = ['#ff7597', '#ffccd5', '#ffd166', '#ffffff', '#ff477e', '#a8dadc', '#ffb4a2'];
+
+        function createConfetti() {
+            const particleCount = isMobile ? 180 : 280;
+            for (let i = 0; i < particleCount; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * -canvas.height,
+                    size: Math.random() * 8 + 6,
+                    color: confettiColors[Math.floor(Math.random() * confettiColors.length)],
+                    speedY: Math.random() * 3.5 + 2,
+                    speedX: Math.random() * 4 - 2,
+                    rotation: Math.random() * 360,
+                    rotationSpeed: Math.random() * 8 - 4,
+                    opacity: 1,
+                    shape: Math.random() > 0.4 ? 'rect' : 'circle'
+                });
+            }
+        }
+
+        function updateConfetti() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            let activeCount = 0;
+            
+            for (let i = 0; i < particles.length; i++) {
+                let p = particles[i];
+                p.y += p.speedY;
+                p.x += p.speedX;
+                p.rotation += p.rotationSpeed;
+                p.speedX += (Math.random() - 0.5) * 0.08;
+                
+                if (p.y < canvas.height + 25) {
+                    activeCount++;
+                    ctx.save();
+                    ctx.globalAlpha = p.opacity;
+                    ctx.translate(p.x, p.y);
+                    ctx.rotate(p.rotation * Math.PI / 180);
+                    ctx.fillStyle = p.color;
+                    
+                    if (p.shape === 'circle') {
+                        ctx.beginPath();
+                        ctx.arc(0, 0, p.size / 2, 0, Math.PI * 2);
+                        ctx.fill();
+                    } else {
+                        ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.7);
+                    }
+                    ctx.restore();
+                }
+            }
+            
+            if (activeCount > 0) {
+                animationId = requestAnimationFrame(updateConfetti);
+            }
+        }
+
+        function fireConfetti() {
+            resizeCanvas();
+            createConfetti();
+            updateConfetti();
+            
+            setTimeout(() => {
+                canvas.style.transition = 'opacity 3.5s ease';
+                canvas.style.opacity = '0';
+                setTimeout(() => {
+                    cancelAnimationFrame(animationId);
+                    particles = [];
+                }, 3500);
+            }, 6000);
+        }
+
+        // --- ENVELOPE & LETTER MODAL INTERACTION ---
+        const envelopeWrapper = document.getElementById('envelope-wrapper');
+        const letterModal = document.getElementById('letter-modal');
+        const closeLetterBtn = document.getElementById('close-letter-btn');
+
+        envelopeWrapper.addEventListener('click', function() {
+            if (!this.classList.contains('open')) {
+                this.classList.add('open');
+                
+                if (navigator.vibrate) {
+                    navigator.vibrate(80);
+                }
+
+                // Sau khi nắp mở và thư trượt lên nhẹ, mở popup thư chi tiết
+                setTimeout(() => {
+                    letterModal.classList.add('active');
+                }, 850);
+            } else {
+                letterModal.classList.add('active');
+            }
+        });
+
+        closeLetterBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            letterModal.classList.remove('active');
+        });
+
+        letterModal.addEventListener('click', function(e) {
+            if (e.target === letterModal) {
+                letterModal.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
